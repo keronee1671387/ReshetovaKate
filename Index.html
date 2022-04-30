@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Лабараторные занятия Рештова Е.С. </title> 
+    <meta charset="utf-8"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!--подключение Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <!--подключение jq библиотеки--> 
+   <script src="js\jquery-min.js"></script>
+   <!--подключение стилей страницы--> 
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\animate.min.css">
+  </head>
+  
+
+    <div class="container-fluid">
+       <!--Шапка сайта-->
+       <div class="row" id="shapka">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="img/LogoHeader.png" alt="logo" id="logof">          
+                </div>
+                <div class="col-sm-6">
+                    <div class="row" id="menu">
+                        <div class="col-sm-3"><h5 id="blmenu">Home</h5></div>
+                        <div class="col-sm-3"><h5 id="blmenu">Products</h5></div>      
+                        <div class="col-sm-3"><h5 id="blmenu">Sevices</h5></div>
+                        <div class="col-sm-3"><h5 id="blmenu">Contact</h5></div>
+                    </div>
+                </div>
+              </div>
+        </div>      
+        <div class="col-sm-2"></div>
+      </div>
+
+      <!--Слайдер-->
+      <div class="row" id="Bg">
+        <!--Фон для слайдера-->   
+            <div class="col-sm-2" id="str1"><img src="img/ArrowLeftSlider.png" alt="стрелка" class="img-responsive" ></div>
+            <div class="col-sm-8">
+                <div class="row">
+                  <div class="col-sm-6" id="iphone"><img src="img/IPhoneSlider.png" alt="айфон" class="img-responsive"></div>
+                  <div class="col-sm-6" id="zagtext">
+                    <h1 class="animated zoomIn" id="zz">Lorem Ipsum is simply </h1>
+                    <h3 class="animated slideInRight" id="zo">
+                      drummy text of the<br>
+                      printing & typesetting </h3>
+                      <button id="butt">Sign up now</button>
+                  </div>
+              
+                </div>
+                <h3></h3>
+            </div>
+            <div class="col-sm-2" id="str2"><img src="img/ArrowRightSlider.png" alt="стрелка" class="img-responsive"></div>  
+      </div>
+      
+      <!--Три блока сайта-->
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <div class="row" id="centr">
+            <div class="col-sm-4 ss">
+              <img src="img/Product1.png" alt="Продукт 1" id="pp">
+              <h4 id="bluzag">Contray to popular</h4>
+              <h6>Lorem Ipsum is not simply random text <br>
+                It has roots in a piece 
+              </h6>
+            </div>
+            <div class="col-sm-4 ss">
+              <img src="img/Product2.png" alt="Продукт 2"  id="pp">
+              <h4 id="bluzag">Contray to popular</h4>
+              <h6>
+                Lorem Ipsum is not simply random text.<br>
+                It has roots in a piece 
+              </h6>
+            </div>
+            <div class="col-sm-4 ss">
+              <img src="img/Product3.png" alt="Продукт 3"  id="pp">
+              <h4 id="bluzag">Contray to popular</h4>
+              <h6>Ipsum is not simply random text<br>
+                It has roots in a piece 
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+
+    
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <!--Заголовок корзинки-->
+            <div class="row">
+              <div class="col-sm-6"><h1 id="zagg">The Shopping cart</h1></div>
+              <div class="col-sm-6"></div>
+            </div>
+
+            <!--Текст сайта-->
+            <div class="row" id="tt">
+              <div class="col-sm-6"><img src="img/ShoppingCart.png" alt="Корзина" class="img-responsive" id="shcar"></div>
+                <div class="col-sm-6" id="stick">
+                    <h5 id="zaglovok">Some Bullet text here</h5>
+                    <h6 id="osntext">Lorem Ipsum is simply dummy text of the printing<br> and typesettine <br>
+                      Lorem Ipsum has been the industry's standard <br> dummy text eve<br>
+                      When an unknown printer took a galley of type <br>and scramble
+                      Lorem Ipsum is simply dummy text of the printing<br> and typesettine <br>
+                      Lorem Ipsum has been the industry's standard <br> dummy text eve<br>
+                      When an unknown printer took a galley of type <br>and scramble </h6>
+                </div>
+            </div>            
+            
+            <!--Форма обратной связи-->
+            <h1 style="text-align: center; margin-top: 16%;">Форма заказа обратного звонка</h1>
+            <div class="row">
+              <div class="col-sm-4"></div>
+              <div class="col-sm-4">
+                <form class="form" id="form_id" action="#">
+                  <!--Валидация на JS-->                           
+                  <input class="input" id="first" type="text" name="name" placeholder="Имя" onblur="checkFirst();" required>                
+                  <input type="text" name="email" id="email" placeholder="Введите свой E-mail" class="input" onblur="checkEmail();" required>  
+                       
+                  <!--Встроенная валидация -->                         
+                  <input type="tel" name="tel" id="tel" placeholder="Формат телефона 8 920-520-39-12" class="input"
+                  required pattern="8 [0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" maxlength="15">     
+                  <input type="text" name="place" id="place" placeholder="Какая тема Вас интересует?"
+                   class="input" required maxlength="200"> 
+
+                  <button id="btn">Отправить вопрос</button>
+                </form>
+              </div>
+              <div class="col-sm-4" id="form_id" >
+                <span id="first_Check"></span>
+                </br></br>             
+                <span id="first_Check2"></span>
+              </div>
+            </div>
+
+
+            <!--Футер сайта-->
+            <div class="row">
+              <div class="col-sm-4"></div>
+              <div class="col-sm-4" id="centr">Copyright © 2012-2022</div>
+              <div class="col-sm-4"></div>
+            </div>
+
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+    </div>
+    
+    <!--Подключение скрипта-->
+    <script src="C:\Users\kated\Desktop\ReshWeb\js\scr.js"></script>
+</html>
