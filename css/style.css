@@ -1,0 +1,349 @@
+/*Менюшка*/
+#menu{
+    padding-top: 25px;
+}
+#blmenu{
+    text-align: center;
+    position: relative;
+    transition: color 0.1s linear;
+}
+#blmenu:after{
+    content: "" ;
+    display: none;
+    width: 80%;
+    height: 3px;
+    background-color:#358dff;
+    position: absolute;
+    margin-top: 8px;
+    top:100%;
+    left: 10px;
+    z-index: 1;
+}
+#blmenu:hover{
+    color: #358dff;
+}
+#blmenu:hover:after{
+    display: block;
+}
+/*вся шапка с лого и меню*/
+ #shapka{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/*текст на слайдере*/
+#zagtext{
+    color: azure;
+    padding-left: 120px;
+    padding-top: 120px;
+}
+/*Слайдер*/
+#iphone
+{
+    padding-top: 25px;
+    width:400px;
+}
+ #Bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(Fon.png)
+}
+/*кнопка на сайте*/
+#butt{
+    margin-top: 40px;
+    display: inline-block;	
+	box-sizing: border-box;
+	padding: 0 15px;
+	margin-top: 23px;
+	outline: none;
+	border: none; 
+    width: 200px; 
+	height: 45px;
+	font-size: 17px;
+	font-weight: 500;
+	text-decoration: none;
+	color: #fff;
+	background-color: #358dff;
+	position: relative;
+	overflow:hidden;
+	vertical-align: top;
+	cursor: pointer;
+    top: 0px;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation; 
+	z-index: 1;
+}
+#butt:hover{
+    transition-duration: 1s;
+    top: 15px;
+    background-color: #005dd6;
+}
+
+/*стрелки на сайте*/
+#str1{
+    padding-left: 90px;
+    padding-top:180px ;
+}#str2{
+    padding-left: 90px;
+    padding-top:180px ;
+}
+/*Три продукта*/
+ #centr{
+    margin-bottom: 70px;
+    text-align: center;
+    margin-top: 140px;
+}
+#bluzag{
+    margin-top: 30px;
+    color: rgb(86, 139, 255);
+}
+
+/*Корзина и текст*/
+#tt{
+    margin-top: 50px;
+}
+#zagg{
+    animation: 5s veselo infinite;
+}
+@-webkit-keyframes veselo{
+    0%{}
+    50%{color: blueviolet; margin-left: 100px;}
+    100%{}
+}
+
+
+/*Работа с формой обратной связи*/
+#form_id{
+	margin: 30px auto 0 auto;
+}
+
+/*.input:invalid{
+    background-color: rgb(255, 201, 201);
+}*/
+.input:required:valid{
+    background-color: rgb(206, 255, 214);
+}
+
+
+.input {
+	width: 100%;
+	height: 47px;
+	margin-bottom: 18px;
+	border: 1px solid #878787;
+	padding-left: 27px;
+}
+
+#btn {
+	border: none;
+	width: 100%;
+	height: 55px;
+	color: rgb(0, 0, 0);	
+	display: block;
+	text-decoration: none;
+	background-color:#ffee00;
+	padding: 15px 0px;
+	text-align: center;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	font-family: 'Open Sans', sans-serif;
+    transition: 0.5s;
+}
+#btn:hover {
+    background-color: #42d100;
+}
+/*Media запросы CSS для адаптации страницы*/
+
+@media screen and (max-width: 1200px) 
+{
+    #form_id{
+        width: 350px;
+        margin-left: -100px;
+       }
+       #iphone{
+        margin-bottom: 30px;
+        width: 280px;
+        margin-top: 50px;
+    }
+    #zagtext{
+        margin-top: -20px;
+    }
+    #blmenu:after{
+        margin-left: -9px;
+        width: 100%;
+    } 
+}
+/* Large devices (desktops, 992px and up)*/
+@media screen and (max-width: 992px) 
+{
+    #form_id{
+     width: 350px;
+     margin-left: -100px;
+    }
+    #pp{
+        width: 150px;
+    }
+    #str1{
+        margin-top: -30px;
+    }
+    #str2{
+        margin-top: -30px;
+    }
+    #zagtext{
+        margin-top: -60px;
+    }
+    #logof{
+        margin-top: 20px;
+        width: 160px;
+    }
+    #shapka{
+        margin-bottom: 70px;
+    }
+    #butt{
+        height: 26px ;
+        width: 150px ;
+        font-size: 13px;
+    }
+    #iphone{
+        width: 200px;
+        margin-top: 50px;
+    }
+    #zz{
+        font-size: larger;
+    }
+    #zo{
+        font-size: medium;
+    }
+    #blmenu:after{
+        margin-left: -15px;
+        width: 150%;
+    } 
+    
+
+}
+/* Medium devices (tablets, 768px and up)*/
+@media screen and (max-width: 768px) 
+{
+    #logof{
+        width: 240px;
+        margin-left: 30%;
+    }
+    #form_id{
+        width: 50%;
+        margin-left: 150px;
+    }
+    .ss{
+        margin-top: 10%;
+    }
+    #stick {
+        margin-top: 100px;
+    }
+    #osntext{
+        font-size:medium;
+    }
+    #zaglovok{
+        margin-bottom: 10%;
+        padding-left: 20%;
+        font-size: large;
+        font-weight: bold;
+      }
+      #zagg{
+          margin-left: 10%;
+      }
+    #iphone
+    {
+    margin-left: 23%;
+    width:60%;
+    }
+    #str1{
+        margin-left: 250px;
+        margin-bottom: 100px;
+    }
+    #str2{
+        margin-left: 250px;
+        margin-bottom: 100px;
+    }
+    #zagtext{
+        padding-left: 0;
+        text-align: center;
+    }
+    #tt {
+        width: auto;
+        margin-left: 20%;
+    }  
+    #blmenu{
+        margin-top: 20px;
+        
+    }
+    #blmenu:after{
+        width: 17%;
+        margin-left: 40%;
+    } 
+}
+
+
+
+
+
+/*Small devices (landscape phones, 576px and up)*/
+@media screen and (max-width: 576px) 
+{
+  
+    #blmenu{
+        margin-top: 20px;
+        
+    }
+    #blmenu:after{
+        width: 17%;
+        margin-left: 40%;
+    }
+
+  #form_id{
+      width: 50%;
+      margin-left: 120px;
+  }
+  #tt{
+      width: 70%;
+      margin-left: 16%;
+  }
+  #centr{
+    margin-bottom: 80px;
+    text-align: center;
+    margin-top: 40px;
+    }
+    input::placeholder {
+        font-size: 11px;
+    }
+    #iphone
+    {
+    margin-left: 20%;
+    width:60%;
+    }
+    #zaglovok{
+        margin-top: 80px;
+    }
+    .ss{
+        margin-top: 80px;
+    }
+    #logof{
+        width: 200px;
+        margin: 20px 115px;
+    }
+    #zaglovok{
+        font-size: large;;
+        font-weight: 700;
+    }
+    #osntext{
+        font-size:small;
+    }
+    #str1{
+        margin-left: 130px;
+        margin-bottom: 100px;
+    }
+    #str2{
+        margin-left: 130px;
+        margin-top: 0px;
+        margin-bottom: 100px;
+    }
+
+}
